@@ -1,0 +1,89 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"Math for deep learning\"\n",
+        "subtitle: \"Chapter 01 - Setting the stage\"\n",
+        "format: html\n",
+        "editor: visual\n",
+        "jupyter: python3\n",
+        "---\n",
+        "\n",
+        "\n",
+        "# Installing the toolkits\n"
+      ],
+      "id": "9c72d95a"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#pip install numpy"
+      ],
+      "id": "a61c900d",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#pip install scipy"
+      ],
+      "id": "293ceb5d",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#pip install matplotlib"
+      ],
+      "id": "30bb83af",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#pip install scikit-learn"
+      ],
+      "id": "17941625",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "# NumPy\n"
+      ],
+      "id": "2f66e781"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "import numpy as np\n",
+        "np.__version__"
+      ],
+      "id": "bc9e0f25",
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "display_name": "Python 3",
+      "language": "python",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}

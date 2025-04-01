@@ -1,0 +1,32 @@
+---
+title: "Math for deep learning"
+subtitle: "Chapter 01 - Setting the stage"
+format: html
+editor: visual
+jupyter: python3
+---
+
+# Installing the toolkits
+
+```{python}
+#pip install numpy
+```
+
+```{python}
+#pip install scipy
+```
+
+```{python}
+#pip install matplotlib
+```
+
+```{python}
+#pip install scikit-learn
+```
+
+# NumPy
+
+```{python}
+import numpy as np
+np.__version__
+```
