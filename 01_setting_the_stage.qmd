@@ -102,3 +102,177 @@ print(d)
 ```{python}
 d[1,2]
 ```
+
+## Zeros and Ones
+
+```{python}
+a = np.zeros((3,4), dtype="uint32")
+a[0,3] = 42
+a[1,1] = 66
+a
+```
+
+```{python}
+b = 11*np.ones((3,1))
+b
+```
+
+## Advanced indexing
+
+```{python}
+a = np.arange(12).reshape((3,4))
+a
+```
+
+```{python}
+a[1]
+```
+
+```{python}
+a[1] = [44,55,66,77]
+a
+```
+
+```{python}
+a[:2]
+```
+
+```{python}
+a[:2,:]
+```
+
+```{python}
+a[:2,:3]
+```
+
+```{python}
+b = np.arange(12)
+b
+```
+
+```{python}
+b[::2]
+```
+
+```{python}
+b[::3]
+```
+
+```{python}
+b[::-1]
+```
+
+```{python}
+a = np.arange(24).reshape((4,3,2))
+a
+```
+
+```{python}
+a[1,:,:] = [[11,22],[33,44],[55,66]]
+a
+```
+
+```{python}
+a[2,...] = [[99,99],[99,99],[99,99]]
+a
+```
+
+## Reading and writing to disk
+
+```{python}
+a = np.random.randint(0,5,(3,4))
+a
+```
+
+```{python}
+np.save("random.npy",a)
+```
+
+```{python}
+b = np.load("random.npy")
+b
+```
+
+# SciPy
+
+```{python}
+import scipy
+scipy.__version__
+```
+
+```{python}
+from scipy.stats import ttest_ind
+a = np.random.normal(0,1,1000)
+b = np.random.normal(0,0.5,1000)
+c = np.random.normal(0.1,1,1000)
+```
+
+```{python}
+ttest_ind(a,b)
+```
+
+```{python}
+ttest_ind(a,c)
+```
+
+# Matplotlib
+
+```{python}
+import numpy as np
+import matplotlib.pylab as plt
+```
+
+```{python}
+x = np.random.random(100)
+plt.plot(x)
+plt.show()
+```
+
+```{python}
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.pylab as plt
+import numpy as np
+x = np.random.random(20)
+y = np.random.random(20)
+z = np.random.random(20)
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+ax.scatter(x,y,z)
+plt.show()
+```
+
+# Scikit-Learn
+
+```{python}
+import numpy as np
+from sklearn.datasets import load_digits
+from sklearn.neural_network import MLPClassifier
+```
+
+```{python}
+d = load_digits()
+digits = d["data"]
+labels = d["target"]
+```
+
+```{python}
+N = 200
+idx = np.argsort(np.random.random(len(labels)))
+x_test, y_test = digits[idx[:N]], labels[idx[:N]]
+x_train, y_train = digits[idx[N:]], labels[idx[N:]]
+```
+
+```{python}
+clf = MLPClassifier(hidden_layer_sizes=(128,))
+clf.fit(x_train, y_train)
+```
+
+```{python}
+score = clf.score(x_test, y_test)
+pred = clf.predict(x_test)
+err = np.where(y_test != pred)[0]
+print(f"score: {score}")
+print("errors:")
+print(f"actual: {y_test[err]}")
+print(f"predicted: {pred[err]}")
+```
