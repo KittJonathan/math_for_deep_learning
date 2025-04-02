@@ -60,3 +60,45 @@ b.shape
 ```
 
 ## Data types
+
+| NumPy name | Equivalent C type  | Range                                   |
+|------------|--------------------|-----------------------------------------|
+| float64    | double             | ± \[2.225 x 10^-308^, 1.798 x 10^308^\] |
+| float32    | float              | ± \[1.175 x 10^-38^, 3.403 x 10^38^\]   |
+| int64      | long long          | \[-2^63^, 2^63^ -1\]                    |
+| unit64     | unsigned long long | \[0, 2^64^ -1\]                         |
+| int32      | long               | \[-2^31^, 2^31^ -1\]                    |
+| uint32     | unsigned long      | \[0, 2^32^ -1\]                         |
+| uint8      | unsigned char      | \[0, 255 = 2^8^ -1\]                    |
+
+```{python}
+a = np.array([1,2,3,4], dtype="uint8")
+print(a.dtype)
+a = np.array([1,2,3,4], dtype="int16")
+a = np.array([1,2,3,4], dtype="int32")
+```
+
+```{python}
+b = np.array([1,2,3,4.0])
+print(b.dtype)
+b = np.array([1,2,3,4.0], dtype="float32")
+```
+
+```{python}
+#| error: TRUE
+c = np.array([111,222,333,444], dtype="uint8")
+c
+```
+
+## 2D arrays
+
+```{python}
+d = np.array([[1,2,3],[4,5,6],[7,8,9]])
+print(d.shape)
+print(d.size)
+print(d)
+```
+
+```{python}
+d[1,2]
+```

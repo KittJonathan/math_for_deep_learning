@@ -99,58 +99,58 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="installing-the-toolkits" class="level1">
 <h1>Installing the toolkits</h1>
-<div id="700eab67" class="cell" data-execution_count="1">
+<div id="ae3d0578" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#pip install numpy</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="5fbd57a0" class="cell" data-execution_count="2">
+<div id="30ab806e" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#pip install scipy</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="f8b9bf6a" class="cell" data-execution_count="3">
+<div id="953cd03d" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#pip install matplotlib</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="b3c42477" class="cell" data-execution_count="4">
+<div id="14878107" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#pip install scikit-learn</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="numpy" class="level1">
 <h1>NumPy</h1>
-<div id="d0980d6f" class="cell" data-execution_count="5">
+<div id="1cf69cb3" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>np.__version__</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="37">
+<div class="cell-output cell-output-display" data-execution_count="47">
 <pre><code>'2.2.4'</code></pre>
 </div>
 </div>
 <section id="defining-arrays" class="level2">
 <h2 class="anchored" data-anchor-id="defining-arrays">Defining arrays</h2>
-<div id="25e141c8" class="cell" data-execution_count="6">
+<div id="580eaf20" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> np.array([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="7300b248" class="cell" data-execution_count="7">
+<div id="a0cba679" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>a</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="39">
+<div class="cell-output cell-output-display" data-execution_count="49">
 <pre><code>array([1, 2, 3, 4])</code></pre>
 </div>
 </div>
-<div id="070f5e60" class="cell" data-execution_count="8">
+<div id="ddcb61fc" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>a.size</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="40">
+<div class="cell-output cell-output-display" data-execution_count="50">
 <pre><code>4</code></pre>
 </div>
 </div>
-<div id="9dd9dd27" class="cell" data-execution_count="9">
+<div id="ea0bac6e" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>a.shape</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="41">
+<div class="cell-output cell-output-display" data-execution_count="51">
 <pre><code>(4,)</code></pre>
 </div>
 </div>
-<div id="62b20493" class="cell" data-execution_count="10">
+<div id="ec26f56f" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>a.dtype</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="42">
+<div class="cell-output cell-output-display" data-execution_count="52">
 <pre><code>dtype('int64')</code></pre>
 </div>
 </div>
-<div id="fb6be83a" class="cell" data-execution_count="11">
+<div id="f1e604dc" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> np.array([[<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>],[<span class="dv">5</span>,<span class="dv">6</span>,<span class="dv">7</span>,<span class="dv">8</span>]])</span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(b)</span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>b.shape</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -158,8 +158,116 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>[[1 2 3 4]
  [5 6 7 8]]</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="43">
+<div class="cell-output cell-output-display" data-execution_count="53">
 <pre><code>(2, 4)</code></pre>
+</div>
+</div>
+</section>
+<section id="data-types" class="level2">
+<h2 class="anchored" data-anchor-id="data-types">Data types</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 27%">
+<col style="width: 56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>NumPy name</th>
+<th>Equivalent C type</th>
+<th>Range</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>float64</td>
+<td>double</td>
+<td>± [2.225 x 10<sup>-308</sup>, 1.798 x 10<sup>308</sup>]</td>
+</tr>
+<tr class="even">
+<td>float32</td>
+<td>float</td>
+<td>± [1.175 x 10<sup>-38</sup>, 3.403 x 10<sup>38</sup>]</td>
+</tr>
+<tr class="odd">
+<td>int64</td>
+<td>long long</td>
+<td>[-2<sup>63</sup>, 2<sup>63</sup> -1]</td>
+</tr>
+<tr class="even">
+<td>unit64</td>
+<td>unsigned long long</td>
+<td>[0, 2<sup>64</sup> -1]</td>
+</tr>
+<tr class="odd">
+<td>int32</td>
+<td>long</td>
+<td>[-2<sup>31</sup>, 2<sup>31</sup> -1]</td>
+</tr>
+<tr class="even">
+<td>uint32</td>
+<td>unsigned long</td>
+<td>[0, 2<sup>32</sup> -1]</td>
+</tr>
+<tr class="odd">
+<td>uint8</td>
+<td>unsigned char</td>
+<td>[0, 255 = 2<sup>8</sup> -1]</td>
+</tr>
+</tbody>
+</table>
+<div id="64bb5c69" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> np.array([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>], dtype<span class="op">=</span><span class="st">"uint8"</span>)</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(a.dtype)</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> np.array([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>], dtype<span class="op">=</span><span class="st">"int16"</span>)</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> np.array([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>], dtype<span class="op">=</span><span class="st">"int32"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>uint8</code></pre>
+</div>
+</div>
+<div id="79e5964f" class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> np.array([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="fl">4.0</span>])</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(b.dtype)</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> np.array([<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="fl">4.0</span>], dtype<span class="op">=</span><span class="st">"float32"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>float64</code></pre>
+</div>
+</div>
+<div id="921afe21" class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> np.array([<span class="dv">111</span>,<span class="dv">222</span>,<span class="dv">333</span>,<span class="dv">444</span>], dtype<span class="op">=</span><span class="st">"uint8"</span>)</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>c</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<div class="ansi-escaped-output">
+<pre><span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">OverflowError</span>                             Traceback (most recent call last)
+<span class="ansi-cyan-fg">Cell</span><span class="ansi-cyan-fg"> </span><span class="ansi-green-fg">In[56]</span><span class="ansi-green-fg">, line 1</span>
+<span class="ansi-green-fg">----&gt; </span><span class="ansi-green-fg">1</span> c = <span class="ansi-yellow-bg">np</span><span class="ansi-yellow-bg">.</span><span class="ansi-yellow-bg">array</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">[</span><span class="ansi-green-fg ansi-yellow-bg">111</span><span class="ansi-yellow-bg">,</span><span class="ansi-green-fg ansi-yellow-bg">222</span><span class="ansi-yellow-bg">,</span><span class="ansi-green-fg ansi-yellow-bg">333</span><span class="ansi-yellow-bg">,</span><span class="ansi-green-fg ansi-yellow-bg">444</span><span class="ansi-yellow-bg">]</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">dtype</span><span class="ansi-yellow-bg">=</span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-fg ansi-yellow-bg">uint8</span><span class="ansi-yellow-fg ansi-yellow-bg">"</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-fg">      2</span> c
+
+<span class="ansi-red-fg">OverflowError</span>: Python integer 333 out of bounds for uint8</pre>
+</div>
+</div>
+</div>
+</section>
+<section id="d-arrays" class="level2">
+<h2 class="anchored" data-anchor-id="d-arrays">2D arrays</h2>
+<div id="6c83110f" class="cell" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>d <span class="op">=</span> np.array([[<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>],[<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>],[<span class="dv">7</span>,<span class="dv">8</span>,<span class="dv">9</span>]])</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(d.shape)</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(d.size)</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(d)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(3, 3)
+9
+[[1 2 3]
+ [4 5 6]
+ [7 8 9]]</code></pre>
+</div>
+</div>
+<div id="6b1f807a" class="cell" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>d[<span class="dv">1</span>,<span class="dv">2</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="58">
+<pre><code>np.int64(6)</code></pre>
 </div>
 </div>
 </section>
