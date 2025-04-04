@@ -1,0 +1,41 @@
+---
+title: "Math for deep learning"
+subtitle: "Chapter 02 - Probability"
+format: html
+editor: visual
+jupyter: python3
+---
+
+# Basic concepts
+
+A probability is a number between 0 and 1 that measures how likely something is to happen.
+
+## Sample space and events
+
+A *sample space* is a discrete set or continuous range that represents all the possible outcomes of an event.
+
+An *event* is something that happens (usually the outcome of some physical process, like the flipping of a coin or the roll of a die).
+
+All the possible events we've grouped together are the sample space we're working with. Each event is a *sample* from the *sample space*, and the sample space represents *all* the possible events.
+
+The sample space for a coin flip is the set {H,T}.
+
+The sample space for the roll of a standard die is the set {1,2,3,4,5,6}.
+
+The probability of getting heads is 0.5, and the probability of getting tails is 0.5.
+
+Probabilities *always* sum to 1.0 over all possible values of the sample space.
+
+## Random variables
+
+Let's denote the outcome of a coin flip by a variable *X,* a *random variable*, that takes on values from its sample space with a certain probability.
+
+*X* is a *discrete random variable* (the sample space is discrete), denoted with a capital letter.
+
+$$
+P(X=heads)=P(X=tails)=0.5
+$$
+
+A *continuous random variable* is a random variable from a continuous sample space, denoted with a lowercase letter, like *x*.
+
+## Humans are bad at probability
